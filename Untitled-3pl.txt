@@ -1,0 +1,14 @@
+student(john).
+student(priya).
+
+teacher(raju).
+teacher(anita).
+
+subject(cs101).
+subject(ma102).
+
+teaches(raju,cs101).
+teaches(anita,ma102).
+
+studies(john,cs101).
+studies(priya,ma102).

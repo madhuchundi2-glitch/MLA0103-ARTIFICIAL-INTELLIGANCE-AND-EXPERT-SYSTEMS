@@ -1,0 +1,4 @@
+diet(diabetes,"Low sugar diet").
+diet(bp,"Low salt diet").
+diet(obesity,"High fiber diet").
+diet(fever,"Liquid food").

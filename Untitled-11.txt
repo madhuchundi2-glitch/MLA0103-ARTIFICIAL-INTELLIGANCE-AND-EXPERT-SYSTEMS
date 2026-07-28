@@ -1,0 +1,15 @@
+edge(a,b).
+edge(a,c).
+edge(b,d).
+edge(c,e).
+
+best_first(Start,Goal):-
+    path(Start,Goal).
+
+path(Goal,Goal):-
+    write(Goal).
+
+path(Start,Goal):-
+    edge(Start,Next),
+    write(Start),write(' -> '),
+    path(Next,Goal).

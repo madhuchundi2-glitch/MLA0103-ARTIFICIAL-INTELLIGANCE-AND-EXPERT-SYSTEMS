@@ -1,0 +1,5 @@
+can_reach :-
+    write('Monkey moves to box'),nl,
+    write('Pushes box under banana'),nl,
+    write('Climbs box'),nl,
+    write('Gets banana'),nl.

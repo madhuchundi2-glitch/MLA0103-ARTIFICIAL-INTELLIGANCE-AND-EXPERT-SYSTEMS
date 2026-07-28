@@ -1,0 +1,6 @@
+fact(fever).
+fact(cough).
+
+flu :-
+    fact(fever),
+    fact(cough).

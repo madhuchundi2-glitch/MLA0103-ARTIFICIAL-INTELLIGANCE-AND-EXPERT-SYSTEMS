@@ -1,0 +1,42 @@
+female(pam).
+female(liz).
+female(ann).
+female(pat).
+
+male(tom).
+male(bob).
+male(jim).
+
+parent(pam,bob).
+parent(tom,bob).
+parent(bob,ann).
+parent(liz,pat).
+parent(jim,tom).
+
+mother(X,Y):-
+    female(X),
+    parent(X,Y).
+
+father(X,Y):-
+    male(X),
+    parent(X,Y).
+
+grandfather(X,Y):-
+    father(X,Z),
+    parent(Z,Y).
+
+grandmother(X,Y):-
+    mother(X,Z),
+    parent(Z,Y).
+
+sister(X,Y):-
+    female(X),
+    parent(P,X),
+    parent(P,Y),
+    X\=Y.
+
+brother(X,Y):-
+    male(X),
+    parent(P,X),
+    parent(P,Y),
+    X\=Y.
